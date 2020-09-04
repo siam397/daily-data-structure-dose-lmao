@@ -105,7 +105,6 @@ public class Graph {
     public boolean hasCycle(){
         Set<String>all=new HashSet<>();
         all.addAll(this.adjacencyList.keySet());
-        System.out.println(all);
         Set<String>visiting=new HashSet<>();
         Set<String>visited=new HashSet<>();
         while(!all.isEmpty()){

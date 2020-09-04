@@ -17,15 +17,19 @@ public class Main {
 //        graph.addEdge("A","D");
 //        graph.addEdge("D","E");
 ////        graph.addEdge("B","C");
-        graph.addVertex("X");
         graph.addVertex("A");
         graph.addVertex("B");
-        graph.addVertex("P");
-        graph.addDirectedEdge("X","A");
-        graph.addDirectedEdge("A","P");
-        graph.addDirectedEdge("X","B");
-        graph.addDirectedEdge("B","P");
-        graph.addDirectedEdge("P","X");
+        graph.addVertex("C");
+        graph.addVertex("D");
+        graph.addVertex("E");
+        graph.addVertex("F");
+        graph.addDirectedEdge("A","B");
+        graph.addDirectedEdge("A","C");
+        graph.addDirectedEdge("B","D");
+        graph.addDirectedEdge("D","F");
+        graph.addDirectedEdge("F","E");
+        graph.addDirectedEdge("E","C");
+        graph.addDirectedEdge("C","A");
         System.out.println(graph.hasCycle());
     }
 }
